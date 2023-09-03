@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:people_counterr/pages/counter_page.dart';
 
 void main() {
-  runApp(const PeopleCounterApp());
+  runApp(const MaterialApp(home: PeopleCounterApp()));
 }
 
 class PeopleCounterApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class PeopleCounterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
+      showSemanticsDebugger: false,
       home: CounterPage(),
     );
   }
