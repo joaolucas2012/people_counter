@@ -11,6 +11,8 @@ class CounterPage extends StatefulWidget {
 class _CounterPageState extends State<CounterPage> {
   int count = 0;
 
+  bool get isFull => count == 20;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +22,18 @@ class _CounterPageState extends State<CounterPage> {
         decoration: const BoxDecoration(color: Colors.amber),
         child: Container(
             alignment: Alignment.center,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/icecream.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  "Pode entrar!",
-                  style: TextStyle(
+                Text(
+                  (count < 20) ? "Pode entrar!" : "Está lotado!",
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 30,
                     fontWeight: FontWeight.w700,
@@ -35,8 +43,8 @@ class _CounterPageState extends State<CounterPage> {
                   padding: const EdgeInsets.symmetric(vertical: 40),
                   child: Text(
                     "$count",
-                    style: const TextStyle(
-                      color: Colors.white,
+                    style: TextStyle(
+                      color: (isFull) ? Colors.red : Colors.white,
                       fontSize: 50,
                     ),
                   ),
