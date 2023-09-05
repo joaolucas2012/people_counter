@@ -1,16 +1,40 @@
 # people_counterr
 
-"A new Flutter project."
+This application is responsible for counting people inside of an ice-cream parlor. The main goal of this application is to learn
+more about Flutter and get started with this technology.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## The face of the app:
 
-A few resources to get you started if this is your first Flutter project:
+You can see the initial screen of the application bellow:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Alt text](assets/images/initial_page.jpeg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It has a counter that starts with 0. It also has two buttons which are responsible for incrementing and decrementing the counter.
+
+---
+
+## Start counting people:
+
+In the image bellow, you can see the counter incremented:
+
+![Alt text](assets/images/start_counting.jpeg)
+
+---
+
+## The ice-cream parlor is fully of people:
+
+When the counter is incremented by 20, the button "Entrou" is disabled to avoid more people! And the text also changes to "Está lotado!", that means the place is fully of people.
+
+---
+
+![Alt text](assets/images/place_is_fully.jpeg)
+
+---
+
+<center>
+
+Developped with ❤️ by **João Lucas**
+
+</center>
